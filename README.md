@@ -42,7 +42,7 @@ Voici un schéma qui décrit comment le projet est structuré:
 
 # Partie 1 - La classe OrganismeVivant
 
-On veut tout d'abord implémenter la classe abstraite de base OrganismeVivant, qui représente un organisme sous-marin de base.
+On veut tout d'abord implémenter la classe abstraite de base OrganismeVivant dans le fichier `organismeVivant.py`, qui représente un organisme sous-marin de base.
 
 Le constructeur de la classe organismeVivant doit pouvoir prendre en entrée un string représentant le nom, un int représentant la profondeurMin et un int représentant la profondeurMax.
 
@@ -78,7 +78,7 @@ N'oubliez pas que l'ordre des multiplications matricielles est important!
 
 # Partie 2 - La classe Plante
 
-On veut créer la classe Plante, qui décrira les plantes que nous croiserons pendant notre voyage. Plante hérite d'OrganismeVivant. Le constructeur de la classe plante prends les mêmes paramètres en entrée que le constructeur de la classe OrganismeVivant, en plus d'un booléen qui indique si des poissons peuvent utiliser la plante comme habitat. Aussi, le type d'un objet plante est TYPE_PLANTE.
+Dans le fichier `plante.py`, on veut créer la classe Plante, qui décrira les plantes que nous croiserons pendant notre voyage. Plante hérite d'OrganismeVivant. Le constructeur de la classe plante prends les mêmes paramètres en entrée que le constructeur de la classe OrganismeVivant, en plus d'un booléen qui indique si des poissons peuvent utiliser la plante comme habitat. Aussi, le type d'un objet plante est TYPE_PLANTE.
 
 On voudra donc surcharger la propriété absraite JSON pour qu'elle retourne un objet de forme:
 
@@ -97,7 +97,7 @@ On voudra également surcharger l'opérateur égal de la classe pour qu'on puiss
 
 # Partie 3 - La classe Poisson
 
-On veut créer la classe Poisson, qui décrira les poissons que nous croiserons pendant notre voyage. Poisson hérite d'OrganismeVivant. Le constructeur de la classe Poisson prends les mêmes paramètres en entrée que le constructeur de la classe OrganismeVivant, en plus d'un float qui indique la vitesse du poisson. Aussi, le type d'un objet plante est TYPE_POISSON.
+Dans le fichier `poisson.py`, on veut créer la classe Poisson, qui décrira les poissons que nous croiserons pendant notre voyage. Poisson hérite d'OrganismeVivant. Le constructeur de la classe Poisson prends les mêmes paramètres en entrée que le constructeur de la classe OrganismeVivant, en plus d'un float qui indique la vitesse du poisson. Aussi, le type d'un objet plante est TYPE_POISSON.
 
 On voudra donc surcharger la propriété absraite JSON pour qu'elle retourne un objet de forme:
 
@@ -116,7 +116,7 @@ On voudra également surcharger l'opérateur égal de la classe pour qu'on puiss
 
 # Partie 4 - La classe Aquarium
 
-On veut créer la classe Aquarium, qui représente toutes les créatures qu'on rencontrera dans les fonds marins.  La classe ne prends rien en paramètre lors de son initialisation, mais elle a comme attribut de classe une liste représentant le contenu de l'environnement (qui est vide au début).
+Dans le fichier `aquarium.py`, on veut créer la classe Aquarium, qui représente toutes les créatures qu'on rencontrera dans les fonds marins.  La classe ne prends rien en paramètre lors de son initialisation, mais elle a comme attribut de classe une liste représentant le contenu de l'environnement (qui est vide au début).
 
 On voudra aussi définir la propriété json, qui retourne un objet qui est la représentation sous forme de dictionnaire du contenu de l'aquarium. Le dictionnaire a la forme suivante:
 
@@ -137,6 +137,12 @@ Finalement, on voudra surcharger les opérateurs suivants:
 
 # Partie 5 - Le main
 
+Le fichier main est `main.py`, et on le roulera avec la commande:
+
+```Python
+python main.py
+```
+
 Il vous faudra compléter le main selon les étapes suivantes
     - Instancier un aquarium
     - Créer au moins 3 poissons
@@ -153,7 +159,7 @@ La profondeur min et max et le scale par lequel vous agrandissez vos poissons es
 
 # Partie 6 - Les tests
 
-Et oui, encore des tests ;) On voudra vous faire tester certaines méthodes de classe. Comme pour le Projet 2, le contenu des tests est laissé à votre discrétion, mais faites en sorte de tester les cas limites!
+Et oui, encore des tests ;) On voudra vous faire tester certaines méthodes de classe. Comme pour le Projet 2, le contenu des tests est laissé à votre discrétion, mais faites en sorte de tester les cas limites! Le fichier test est `tests.py`
 
 Les fonctions à tester sont les suivantes:
     - On veut tester la fonction scale d'organismeVivant
