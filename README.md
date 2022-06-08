@@ -1,6 +1,6 @@
 # TP3
 
-#### :alarm_clock: [Date de remise le lundi 21 juin 2021 à 23h59](https://www.timeanddate.com/countdown/generic?iso=20210621T2359&p0=165&msg=Remise+TP3&font=slab&csz=1)
+#### :alarm_clock: [Date de remise le vendredi 24 juin 2022 à 23h59]
 
 ## Objectif
 
@@ -9,8 +9,6 @@ Ce TP a pour objectif de pratiquer les tests et outils de correction, les biblio
 ## Critères d'évaluation
 
 Une démarche de qualité et un bon résultat donnent la note maximale. Une erreur minime (ex faute de frappe) mènera à une pénalité de 0.5 points. Puisqu'il s'agit d'un cours de programmation, une attention particulière sera accordée à la qualité du code. La note possible maximale du TP est 100%.
-
-Vu que c'est le dernier TP, je serai très regardante sur la qualité du code et le respect des normes de programmations. À ce point de la session, vous devriez être familiers avec les normes de programmations qu'on vous apprends en classe, par exemple la nomenclature des variables (lowerCamelCase pour les variables et UPPER_CASE pour les constantes).
 
 **On souhaite utiliser la librairie abc et les décorateurs aux endroits appropriés.**
 Un code qui ne roule pas est un 0 automatique, alors testez votre code!!
@@ -166,7 +164,3 @@ Les fonctions à tester sont les suivantes:
     - On veut tester l'égalité des Poissons
     - On veut tester l'égalité des Plantes
     - On veut tester l'addition, la soustraction et la fonction qui retourne la taille de l'Aquarium
-
-# Petit Bonus
-
-Si ça vous tente, j'ai fait un petit simulateur pour vous aider à visualiser le TP :) Il est disponible au https://cursedapps.github.io/marching-cubes/. Vous n'avez qu'à uploader votre fichier out.json, et à appuyer sur START! une fois que tous les modèles sont loadés! Ce n'est pas essentiel au TP, mais si la génération est bien faite, c'est un bon signe que votre fichier out.json est bien formé :)
